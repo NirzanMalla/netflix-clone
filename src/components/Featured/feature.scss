@@ -1,0 +1,18 @@
+.featured {
+    height: 90vh;
+    position:relative;
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .info{
+        width: 35%;
+        position: absolute;
+        left: 50px;
+        bottom: 100px;
+        color: white;
+    }
+}
