@@ -11,8 +11,52 @@
     .info{
         width: 35%;
         position: absolute;
-        left: 50px;
         bottom: 100px;
         color: white;
+        left: 50px;
+        display: flex;
+        flex-direction: column;
+        
+        img {
+            width: 400px;
+        }
+
+        .desc {
+            margin-bottom: 25px;
+        }
+
+        .buttons {
+            display: flex;
+
+            button {
+                border-radius: 10px;
+                border: none;
+                padding: 5px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 10px;
+                font-size: 15px;
+                font-weight: 500;
+                cursor: pointer;
+
+                &.play{
+                    background-color: white;
+                    color: var(--main-color);
+                }
+    
+                &.more{
+                    background-color: gray;
+                    color: white;
+                }
+
+            span{
+                margin-left: 5px;
+            }
+            }
+            
+        }
+        
     }
 }
+
