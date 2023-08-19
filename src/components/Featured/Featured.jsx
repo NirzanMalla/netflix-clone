@@ -2,9 +2,19 @@ import React from 'react'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import './feature.scss'
-const Featured = () => {
+import { Select } from '@mui/material';
+const Featured = ({type}) => {
   return (
     <div className='featured'>
+      {type && (
+        <div className="category">
+          <span>{type === "movie" ? "Movies": "TVSeries"}</span>
+          <select name ="genre" id="genre">
+            <option value="">Genre</option>
+
+          </select>
+        </div>
+      )}
       <img 
       width='100%'
       src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNh4rDMFFvBFxzjNq6yQ9lRIqJH-mEn3yXERyZ88VeIE-KC19AK8xta3snVkiPAWP696uBzYxI3jW8l42tHb2BQF6HTSFJX-CbWjwOSaN-PUiXQzxx17NcxMteECV6LEWqhAnGjYsXNkJGf6zlwKWnitvZQO7lW25nHAA_9n3pbEce2ANW04eNijF0bw/s1600/WEDNESDAY-ADDAMS-1022023.png" alt="Poster"
